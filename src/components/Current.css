@@ -1,0 +1,11 @@
+.dGrid{
+    display: grid !important;
+    grid-template-rows: 30% auto;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.dGrid > div{
+    align-self: start;
+}
