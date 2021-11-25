@@ -7,10 +7,8 @@ export const FetchTimeApi = () => {
     const [current, setCurrent] = useState({})
 
     useEffect(() => {
-        if ("geolocation" in navigator) {
-            console.log("Available");
-        } else {
-            console.log("Not Available");
+        if (!("geolocation" in navigator)) {
+            alert("Geolocation is not Available, please activate the geolocation in your device settings, and recharge the page");
         }
 
         getCoords()
