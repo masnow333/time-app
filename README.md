@@ -2,15 +2,15 @@
 
 First, install the dependencies:
 
-### `npm install`
+`npm install`
 
 Then create the .env file in the base dir project and add this line inside [with your open weather map key](https://openweathermap.org):
 
-### `REACT_APP_SECRET_KEY=<Your secret kay here>`
+`REACT_APP_SECRET_KEY=<Your secret kay here>`
 
 After that, run the app:
 
-### `npm start`
+`npm start`
 
 
 ## Available Scripts
