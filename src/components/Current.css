@@ -1,7 +1,6 @@
 .dGrid{
     display: grid !important;
     width: 30%;
-    height: 30%;
     /* grid-template-columns: 50% 50%; */
     grid-template-rows: 50% auto;
     align-items: center;
@@ -17,6 +16,10 @@
     display: grid !important;
     grid-template-columns: 50% 50%;
     align-items: center;
+}
+
+.dateDay{
+	grid-column: 1/3;
 }
 
 @media screen and (max-width: 1300px){
