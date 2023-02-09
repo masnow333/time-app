@@ -2,12 +2,10 @@ import React, {useEffect, useState} from 'react'
 // import { AnimatedBackground } from './components/AnimatedBackground'
 import { RenderCurrent } from './components/RenderCurrent'
 import {Chart} from './components/Chart'
-import {Current} from "./components/Current";
 
 const App = () => {
 	console.log('App')
 	const [current, setCurrent] = useState({})
-	const [dailyForecast, setDailyForecast] = useState([])
 	const [data, setData] = useState({});
 
 	useEffect(() => {
@@ -38,7 +36,6 @@ const App = () => {
 		const response = await fetch(url)
 		const json = await response.json()
 		setCurrent(json.current)
-		await setDailyForecast(json.daily)
 		setData({
 			labels: json.daily.map(day => new Date(day.dt * 1000).toDateString()),
 			min: json.daily.map(day => day.temp.min),

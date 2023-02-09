@@ -1,5 +1,3 @@
-import { Interaction } from 'chart.js';
-import { getRelativePosition } from 'chart.js/helpers';
 import React, {useEffect, useState} from 'react';
 import {
 	Chart as ChartJS,
@@ -74,8 +72,9 @@ export function Chart({dataWithDailyForecast}) {
 					backgroundColor: 'rgba(255, 99, 132, 0.5)',
 				},
 			],
-		})
+		}) // eslint-disable-next-line
 		console.log(dataChart, 'dataWithDailyForecast')
+		// eslint-disable-next-line
 	}, [dataWithDailyForecast]);
 
 
