@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react'
-// import { AnimatedBackground } from './components/AnimatedBackground'
 import { RenderCurrent } from './components/RenderCurrent'
 import {Chart} from './components/Chart'
+
+import './App.css'
 
 const App = () => {
 	console.log('App')
@@ -47,7 +48,7 @@ const App = () => {
     <>
 		{/*<AnimatedBackground />*/}
 		<RenderCurrent current={current} />
-		<div style={{height: '50vh'}}>
+		<div className="chart">
 			<Chart dataWithDailyForecast={data} />
 		</div>
     </>
